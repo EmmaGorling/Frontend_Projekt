@@ -1,0 +1,16 @@
+{
+  "name": "frontend_projekt",
+  "version": "1.0.0",
+  "description": "I projektuppgiften ska vi skapa en webbplats mot en vald målgrupp. I webbplatsen ska vi använda oss av minst två olika API'er och få dessa att samarbeta med varandra för att få en webbplats med ett tydligt och användbart syfte.",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
