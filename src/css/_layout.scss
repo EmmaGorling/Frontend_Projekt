@@ -1,0 +1,95 @@
+@use 'base.scss';
+
+body {
+    width: 100%;
+}
+h1 {
+    display: block;
+    width: fit-content;
+    margin: 50px auto;
+}
+#searchField {
+    display: block;
+    width: fit-content;
+    margin: base.$center-margin 50px; 
+    input {
+        height: 2em;
+        width: 15em;
+    }
+    button {
+        height: 2.8em;
+        width: 2.8em;
+        border-radius: 50%;
+    }
+}
+#dogs {
+    margin: base.$center-margin;
+    width: 90vw;
+    max-width: 1500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    article {
+        width: fit-content;
+        margin: 20px auto;
+        padding:  20px;
+    }
+    img {
+        display: block;
+        margin: base.$center-margin;
+        width: 300px;
+        max-width: 300px;
+    }
+}
+#dogsInfo {
+    display: none;
+    grid-template-columns: 1fr;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    button {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        height: 2.8em;
+        width: 2.8em;
+        border-radius: 50%;
+    }
+    article {
+        width: 90%;
+        max-width: 800px;
+        margin: base.$center-margin;
+        padding: 50px 0px;
+    }
+    h1 {
+        text-align: center;
+        margin: 50px auto;
+    }
+    img {
+        display: block;
+        width: 90%;
+        max-width: 500px;
+        margin: base.$center-margin;
+    }
+    #infoBox {
+        display: block;
+        width: fit-content;
+        margin: base.$center-margin;
+    }
+}
+
+
+
+@media (min-width: 450px) {
+    #dogs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 1100px) {
+    #dogs {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
