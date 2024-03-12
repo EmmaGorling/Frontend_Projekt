@@ -2,6 +2,10 @@
 
 window.onload = init;
 
+// Hämta miljövariabler
+const ninjaApiKey = process.env.ninjaKey
+const rapidApiKey = process.env.rapidKey
+
 function init() {
     const searchBox = document.getElementById('searchInput');
     const searchBtn = document.getElementById('searchBtn');
@@ -18,7 +22,7 @@ async function fetchOne(search) {
     const url = 'https://api.api-ninjas.com/v1/dogs?name=' + search
     const options = {
         method: 'GET',
-        headers: { 'X-Api-Key': 'DKwpL0bB0BpTtamB5Dhngg==U1EwoHS63hfiS92Z'}
+        headers: { 'X-Api-Key': ninjaApiKey}
         };
     
     // Fetch-anrop 1 / Från API-Ninjas
@@ -72,7 +76,7 @@ async function fetchTwo(dog) {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '611904410bmsh3966ebf451c005ep1902a4jsn5f36d0fc16ba',
+            'X-RapidAPI-Key': rapidApiKey,
             'X-RapidAPI-Host': 'dog-breeds2.p.rapidapi.com'
         }
     };
