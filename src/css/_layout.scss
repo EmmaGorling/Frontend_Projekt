@@ -4,6 +4,8 @@ body {
     width: 100%;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 500;
+    background-color: base.$nearBlack;
+    color: base.$ligthBeige;
 }
 h1 {
     display: block;
@@ -55,6 +57,7 @@ h2 {
     left: 0;
     right: 0;
     bottom: 0;
+    background-color: base.$nearBlack;
     button {
         position: absolute;
         top: 50px;
@@ -92,11 +95,16 @@ h2 {
     margin: 0 auto;
     #loadImg {
         animation: loading 3s infinite linear;
-
+        color: base.$ligthBeige;
     }
 }
 #loader.show {
     display: block;
+}
+button:hover, #dogs article:hover {
+    cursor: pointer;
+    background-color: base.$lightBrown;
+    color: base.$nearBlack;
 }
 
 
