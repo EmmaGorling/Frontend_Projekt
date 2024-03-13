@@ -122,7 +122,7 @@ function showDogsInfo(dog) {
     let drooling;
     switch(dog.drooling) {
         case 1:
-            drooling = 'Pretty much nothing.';
+            drooling = 'Almost nothing.';
             break;
         case 2:
             drooling = 'Just a little.';
