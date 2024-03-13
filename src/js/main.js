@@ -178,17 +178,16 @@ function showDogsInfo(dog) {
     // Stäng-knapp
     let closeBtn = document.getElementById('close');
     closeBtn.addEventListener('click', function() {
-        infoDiv.innerHTML = ''
-        toggleShowInfo();
+        toggleShowInfo(); 
     });
 };
 // Visa och dölj Info
 function toggleShowInfo() {
     const infoDiv = document.getElementById('dogsInfo');
 
-    if(infoDiv.style.display === "none") {
-        infoDiv.style.display = "block"
-    } else {
+    if(infoDiv.style.display === "block") {
         infoDiv.style.display = "none"
+    } else {
+        infoDiv.style.display = "block"
     }
 }

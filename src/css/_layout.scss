@@ -63,8 +63,11 @@ a {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    background-color: base.$nearBlack;
+    margin: 50px auto;
+    width: 90%;
+    background-color: lighten(base.$nearBlack, 5%);
+    border: 3px solid darken(base.$nearBlack, 5%);
+    padding: 50px 20px;
     button {
         position: absolute;
         top: 50px;
