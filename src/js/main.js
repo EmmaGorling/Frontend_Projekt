@@ -11,7 +11,7 @@ function init() {
     
 }
 
-
+// Visa och göm loading div
 function showLoader() {
     const loadDiv = document.getElementById('loader');
     loadDiv.classList.add('show');
