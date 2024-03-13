@@ -12,7 +12,20 @@ function init() {
 }
 
 
+function showLoader() {
+    const loadDiv = document.getElementById('loader');
+    loadDiv.classList.add('show');
+};
+function hideLoader() {
+    const loadDiv = document.getElementById('loader');
+    loadDiv.classList.remove('show');
+};
+
+
+
+// Hämta data
 async function fetchOne(search) {
+    showLoader();
     
     // Parametrar
     const url = 'https://api.api-ninjas.com/v1/dogs?name=' + search
@@ -34,6 +47,7 @@ async function fetchOne(search) {
 // Visa hundar vid sökning
 async function showDogs(array) {
 
+    hideLoader();
     // Hämta och rensa main-div innan utskrift
     const mainDiv = document.getElementById('dogs');
     mainDiv.innerHTML = '';

@@ -78,6 +78,15 @@ h1 {
         margin: base.$center-margin;
     }
 }
+#loader {
+    display: none;
+    width: 60%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+#loader.show {
+    display: block;
+}
 
 
 
