@@ -33,9 +33,7 @@ a {
         width: 15em;
     }
     button {
-        height: 2.8em;
-        width: 2.8em;
-        border-radius: 50%;
+        @include base.button;
     }
 }
 #dogs {
@@ -73,9 +71,7 @@ a {
         position: absolute;
         top: 50px;
         right: 50px;
-        height: 2.8em;
-        width: 2.8em;
-        border-radius: 50%;
+        @include base.button;
     }
     article {
         width: 90%;

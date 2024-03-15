@@ -5,6 +5,12 @@ $ligthBeige: #d1b586;
 $nearBlack: #362f27;
 $lightBrown: #af7c4d;
 
+@mixin button {
+    height: 2.8em;
+    width: 2.8em;
+    border-radius: 50%;
+}
+
 @keyframes loading {
     50% {
         transform: scale(1.5, 1.5) rotate(180deg);
