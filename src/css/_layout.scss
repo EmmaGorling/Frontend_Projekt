@@ -99,7 +99,7 @@ a {
     display: none;
     width: 60%;
     max-width: 200px;
-    margin: 0 auto;
+    margin: base.$center-margin;
     #loadImg {
         animation: loading 3s infinite linear;
         color: base.$ligthBeige;
